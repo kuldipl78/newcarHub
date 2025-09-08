@@ -1,0 +1,61 @@
+.staff-dashboard {
+  padding: 2rem;
+  background: #f3f4f6;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  margin-left: 260px; /* 🔥 Sidebar साठी जागा */
+}
+
+.dashboard-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+.staff-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+/* Staff Panel */
+.staff-panel {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.staff-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  transition: 0.3s;
+}
+
+.staff-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Booking Panel */
+.booking-panel {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 992px) {
+  .staff-dashboard {
+    margin-left: 0; /* 🔥 Sidebar hide झाल्यावर content full-width */
+  }
+
+  .staff-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

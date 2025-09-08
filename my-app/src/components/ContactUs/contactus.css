@@ -1,0 +1,101 @@
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contact textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact .btn {
+  background: linear-gradient(135deg, #177588, #031a1f);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.contact .btn:hover {
+  background: linear-gradient(135deg, #031a1f, #177588);
+}
+/* Chrome, Safari, Edge, Opera madhun arrows remove karayla */
+.contact input[type=number]::-webkit-inner-spin-button,
+.contact input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox + modern browsers madhun arrows remove karayla */
+.contact input[type=number] {
+  appearance: textfield;
+}
+.error-message {
+  color: red;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact {
+    padding: 40px 15px;
+  }
+
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 30px 10px;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact input,
+  .contact textarea,
+  .contact .btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,121 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden; /* prevent scroll */
+}
+
+.signup-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px 30px; /* reduced padding */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* softer shadow */
+  width: 400px; /* slightly smaller */
+  max-width: 90%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.signup-card:hover {
+  transform: scale(1.01); /* subtle hover effect */
+}
+
+.signup-title {
+  font-size: 28px; /* slightly smaller */
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.signup-subtitle {
+  font-size: 14px; /* smaller */
+  color: #666;
+  margin-bottom: 15px; /* minimized spacing */
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* reduced gap between fields */
+  text-align: left;
+}
+
+.signup-form label {
+  font-size: 14px;
+  margin-bottom: 1px;
+  cursor: default; /* no pointer */
+}
+
+.signup-form input,
+.signup-form select {
+  padding: 10px 8px; /* reduced padding */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  border-color: #4facfe;
+  outline: none;
+  box-shadow: 0 0 8px rgba(79, 172, 254, 0.4);
+}
+
+.signup-button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+.signup-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+  color: #ff4d4f;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.redirect-text {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+}
+
+.login-link {
+  color: #4facfe;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer; /* only login link has pointer */
+}
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+.info {
+  color: blue;
+}

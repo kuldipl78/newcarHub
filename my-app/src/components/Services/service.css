@@ -1,0 +1,25 @@
+.services {
+  
+  text-align: center;
+}
+
+.service-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 12px;
+  width: 200px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: #064663;
+  color: #fff;
+}

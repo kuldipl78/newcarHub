@@ -1,0 +1,148 @@
+.top__nav {
+  position: fixed;
+  top: 0;
+  left: 260px;
+  z-index: 999;
+  background: var(--primary-color);
+  width: calc(100% - 260px);
+  height: 70px;
+  line-height: 70px;
+  transition: all 0.3s ease;
+}
+
+/* when sidebar collapsed */
+.top__nav.expanded {
+  left: 0;
+  width: 100%;
+}
+
+.top__nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+.top__nav-right {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  justify-content: flex-end;
+}
+
+/* Search Box */
+.search__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  background: #0b0c28 !important;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  min-width: 180px;
+}
+
+.search__box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--small-text-color);
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.search__box input::placeholder {
+  color: var(--small-text-color);
+}
+
+.search__box span i {
+  color: var(--small-text-color);
+  font-size: 1rem;
+}
+
+/* Profile Image */
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Notifications */
+.notification {
+  position: relative;
+}
+
+.notification i {
+  color: var(--small-text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: 25%;
+  right: -10%;
+  width: 13px;
+  height: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  color: white;
+  font-size: 0.65rem;
+}
+
+/* 🔹 Responsive Styles */
+@media (max-width: 992px) {
+  .top__nav {
+    left: 0;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .top__nav-wrapper {
+    padding: 0px 15px;
+  }
+
+  .top__nav-right {
+    column-gap: 1rem;
+  }
+
+  .search__box {
+    min-width: 140px;
+    padding: 0 8px;
+  }
+
+  .search__box input {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .top__nav {
+    height: 60px;
+    line-height: 60px;
+  }
+
+  .top__nav-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .search__box {
+    display: none; /* hide search in very small screens */
+  }
+
+  .notification i {
+    font-size: 1rem;
+  }
+
+  .profile img {
+    width: 32px;
+    height: 32px;
+  }
+}

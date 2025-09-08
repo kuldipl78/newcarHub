@@ -1,0 +1,30 @@
+@import "remixicon/fonts/remixicon.css";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --primary-color: #181b3a;
+  --secondary-color: #01d293;
+  --body-bg: #0b0c28;
+  --heading-color: #fff;
+  --small-text-color: #808191;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: var(--body-bg);
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.main__layout {
+  display: flex;
+}

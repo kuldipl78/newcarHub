@@ -1,0 +1,51 @@
+.sidebar {
+  width: 260px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: var(--primary-color);
+  padding: 0px 30px;
+  transition: transform 0.3s ease;
+}
+
+/* Mobile default: hidden */
+.sidebar {
+  transform: translateX(-100%);
+}
+
+/* Mobile open */
+.sidebar.open {
+  transform: translateX(0);
+}
+
+/* Large & medium devices: sidebar always visible */
+@media (min-width: 992px) {
+  .sidebar {
+    transform: translateX(0);
+  }
+}
+
+/* Toggle Button */
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background-color: aliceblue;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  color: #033b4a;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Show toggle only on small devices */
+@media (max-width: 991px) {
+  .sidebar-toggle {
+    display: block;
+  }
+}

@@ -1,0 +1,65 @@
+# CarHub API
+
+post http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "email" : "kuldiplohare064@gmail.com",
+  "name": "kuldip",
+  "address": "sinhgad",
+  "gender" : "male",
+  "phone_number": "78975898003"
+}
+
+###
+
+post http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "email" : "kuldiplohare90@gmail.com"
+}
+
+### 1. Add a New Service
+POST http://localhost:3000/book_service
+Content-Type: application/json
+
+{
+    "customer_name": "John Doe",
+    "vehicle_name": "Honda City",
+    "vehicle_number": "MH12AB1234",
+    "mobile_number": "9876543210",
+    "booking_date": "2025-09-05",
+    "service_type": "exterior",
+    "work_details": "Please clean under the seats properly"
+}
+
+###
+
+### 2. Get All Services
+GET http://localhost:3000/services
+
+###
+
+### 3. Get Service by ID
+GET http://localhost:3000/services/4
+
+###
+
+### 4. Update Service by ID
+PUT http://localhost:3000/services/1
+Content-Type: application/json
+
+{
+    "customer": "John Doe",
+    "vehicle": "Honda City 2021",
+    "service": "Brake Repair",
+    "status": "inprogress",
+    "staff": "Robert",
+    "urgent": "yes"
+}
+
+###
+
+### 5. Delete Service by ID
+DELETE http://localhost:3000/services/5
